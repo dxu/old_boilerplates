@@ -2,7 +2,7 @@
 My personal boilerplate for Express.
 
 ##Versions:
-master: Coffeescript, Mongodb, Handlebars, SASS (with a build script)
+node: Coffeescript, Mongodb, Handlebars, SASS (with a build script)
 
 ###package.json
 * underscore
