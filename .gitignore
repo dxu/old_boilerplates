@@ -1,0 +1,7 @@
+.sass-cache
+.DS_STORE
+*.css
+*.js
+fonts/*
+public
+
