@@ -1,10 +1,10 @@
-user = require('../models/user')
+user = require '../models/user'
 
 #
 # * GET users listing.
 #
 exports.list = (req, res) ->
-  res.send "respond with a resource"
+  res.send 'respond with a resource'
 
 exports.json_all = (req, res) ->
     user.find().exec (err, results) ->
@@ -38,6 +38,6 @@ exports.login_post = (req, res) ->
       res.redirect 'login'
 
 exports.login_get = (req, res) ->
-  return res.render "login" if not req.session.user_id
+  return res.render 'login' unless req.session.user_id
   console.log 'Already logged in'
-  res.render "index"
+  res.render 'index'
