@@ -1,0 +1,14 @@
+{
+  "name": "Boilerplates",
+  "description": "Simple express boilerplate.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.4.8",
+    "ejs": "~0.8.5"
+  },
+  "devDependencies": {
+    "bower": "^1.2.8",
+    "grunt": "^0.4.2"
+  }
+}
