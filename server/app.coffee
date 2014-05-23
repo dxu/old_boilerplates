@@ -14,7 +14,7 @@ app.configure ->
   app.use express.bodyParser()
   app.use express.methodOverride()
   app.use app.router
-  app.use express.static path.join(__dirname, "public")
+  app.use express.static path.join(__dirname, "..", "client")
 
 app.configure 'development', ->
   app.use express.errorHandler()
