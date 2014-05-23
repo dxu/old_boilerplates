@@ -6,7 +6,7 @@ path = require 'path'
 app = express()
 app.configure ->
   app.set "port", process.env.PORT or 3300
-  app.set "views", __dirname + "/views"
+  app.set "views", path.join(__dirname, "..", "dist", "templates")
   app.set 'view engine', 'ejs'
   app.engine 'html', require('ejs').renderFile
   app.use express.favicon()
@@ -14,7 +14,7 @@ app.configure ->
   app.use express.bodyParser()
   app.use express.methodOverride()
   app.use app.router
-  app.use express.static path.join(__dirname, "..", "client")
+  app.use express.static path.join(__dirname, "..", "dist")
 
 app.configure 'development', ->
   app.use express.errorHandler()
