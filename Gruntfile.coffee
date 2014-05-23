@@ -15,6 +15,7 @@ module.exports = (grunt) ->
         src: ['stylesheets/**/*', 'assets/**/*', 'templates/**/*']
         dest: 'dist/'
 
+  grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
