@@ -8,8 +8,15 @@ module.exports = (grunt) ->
         src: '**/*.coffee'
         dest: 'dist/scripts'
         ext: '.js'
+    copy:
+      client:
+        expand: true
+        cwd: 'client/'
+        src: ['stylesheets/**/*', 'assets/**/*', 'templates/**/*']
+        dest: 'dist/'
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-copy'
 
 
 
